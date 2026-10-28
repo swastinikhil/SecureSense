@@ -1,0 +1,59 @@
+<!---
+===========================================================
+SecureSense Login Interface
+-----------------------------------------------------------
+This file defines the login page for the SecureSense system.
+
+Main Responsibilities:
+
+1. Display username and password input fields
+2. Provide a login button for user authentication
+3. Collect user input and pass it to login.js
+4. Show error message if login fails
+
+This acts as the entry point to the SecureSense system.
+===========================================================
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Title shown in browser tab -->
+<title>SecureSense Login</title>
+<!-- Linking external CSS file -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main container for login -->
+<div class="login-box">
+
+    <!-- Heading -->
+<h1>SecureSense</h1>
+<!-- Subheading -->
+<h3>Security Monitoring System</h3>
+
+<!-- Username input box --> 
+<!-- id is used to access this element in JavaScript -->
+<input type="text" id="username" placeholder="Username">
+
+<!-- Password input box -->
+<!-- type="password" hides text -->
+<input type="password" id="password" placeholder="Password">
+
+<!-- Button that calls JavaScript function -->
+<button onclick="login()">Login</button>
+
+<!-- Paragraph to show error messages -->
+<p id="error"></p>
+
+</div>
+
+<!-- Linking JavaScript file -->
+<script src="login.js"></script>
+
+</body>
+</html>

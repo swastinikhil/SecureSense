@@ -1,0 +1,117 @@
+/*
+===========================================================
+SecureSense Styling File
+-----------------------------------------------------------
+This file defines the visual appearance of the system.
+
+Main Responsibilities:
+
+1. Style login page and dashboard layout
+2. Design buttons, inputs, and panels
+3. Apply colors, fonts, and spacing
+4. Improve overall user interface and readability
+
+This file enhances the visual presentation of SecureSense.
+===========================================================
+*/
+
+/*Page Styling */
+body{
+
+font-family: Arial;
+background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+color:white;
+text-align:center;
+padding-top:80px;
+
+
+body{
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+}
+
+/*Login Box*/
+.login-box{
+
+background:white;
+color:black;
+width:320px;
+margin:auto;
+padding:30px;
+border-radius:10px;
+
+}
+
+/*Dashboard Panel*/
+.panel{
+
+background:rgba(0,0,0,0.4);
+width:400px;
+margin:auto;
+padding:30px;
+border-radius:10px;
+
+}
+
+/*Input Fields*/
+input{
+
+width:90%;
+padding:10px;
+margin:10px;
+
+}
+
+/*Button*/
+button{
+
+padding:12px 25px;
+background:#0077ff;
+border:none;
+color:white;
+cursor:pointer;
+border-radius:5px;
+font-size:16px;
+
+}
+
+/* Hover effect */
+button:hover{
+
+background:#0055cc;
+
+}
+
+/* Result section */
+.result{
+
+margin-top:30px;
+font-size:22px;
+
+}
+
+/* Table */
+table{
+
+width:100%;
+margin-top:20px;
+border-collapse:collapse;
+
+}
+
+th, td{
+
+border:1px solid white;
+padding:10px;
+text-align:center;
+
+}
+
+th{
+
+background:#0077ff;
+
+}

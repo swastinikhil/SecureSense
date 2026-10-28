@@ -1,0 +1,49 @@
+/*
+===========================================================
+SecureSense Basic Interface (Single-Page Version)
+-----------------------------------------------------------
+This file defines a simple web interface for the SecureSense system.
+
+Main Responsibilities:
+
+1. Provide a button to trigger behavioral risk analysis
+2. Display the calculated risk score
+3. Display the classified risk level (Normal/Warning/High)
+4. Connect the interface with the core logic in securesense.js
+
+This file represents a basic demonstration version of the 
+SecureSense system without login or advanced dashboard features.
+===========================================================
+*/
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Title shown on the browser tab -->
+<title>SecureSense - Behavioral Risk Detection</title>
+</head>
+
+<body>
+
+    <!-- Main heading displayed on top of the dashboard -->
+<h1>SecureSense Behavioral Risk Detection System</h1>
+
+<!-- Button to start analysis --> 
+ <!-- onclick triggers JavaScript function -->
+<button onclick="runSecureSense()">Analyze User Session</button>
+
+<!-- This will display the risk score -->
+<!-- JavaScript will update this using innerText -->
+<h2 id="score"></h2>
+<!-- This will display the risk level -->
+<h2 id="risk"></h2>
+
+<!-- Linking JavaScript file --> 
+<!-- This file contains all logic (risk calculation, etc.) -->
+<script src="securesense.js"></script>
+
+</body>
+
+</html>

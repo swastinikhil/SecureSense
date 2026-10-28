@@ -1,0 +1,84 @@
+<!----
+===========================================================
+SecureSense Dashboard Interface
+-----------------------------------------------------------
+This file defines the main user interface of the system.
+
+Main Responsibilities:
+
+1. Provide button to trigger risk analysis
+2. Display calculated risk score and risk level
+3. Show triggered behavioral risk indicators
+4. Maintain a table of previous user sessions
+
+This page acts as the visualization layer of the system.
+===========================================================
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+```
+<!-- Title of page -->
+<title>SecureSense Dashboard</title>
+
+<!-- CSS styling -->
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- Main heading -->
+<h1>SecureSense Security Dashboard</h1>
+
+<!-- Panel container -->
+<div class="panel">
+
+    <!-- Button to start risk analysis -->
+    <button onclick="runSecureSense()">Analyze User Session</button>
+
+    <!-- Result display section -->
+    <div class="result">
+
+        <!-- Displays calculated risk score -->
+        <h2 id="score"></h2>
+
+        <!-- Displays risk level -->
+        <h2 id="risk"></h2>
+
+        <!-- List of triggered alerts -->
+        <h3>Triggered Risk Indicators</h3>
+        <ul id="alerts"></ul>
+
+    </div>
+
+    <!-- Table heading -->
+    <h3>Recent User Sessions</h3>
+
+    <!-- Table to show session history -->
+    <table id="sessionTable">
+
+        <!-- Table headers -->
+        <tr>
+            <th>Session</th>
+            <th>Score</th>
+            <th>Risk Level</th>
+        </tr>
+
+    </table>
+
+</div>
+
+<!-- Link JavaScript file -->
+<script src="securesense.js"></script>
+```
+
+</body>
+
+</html>
